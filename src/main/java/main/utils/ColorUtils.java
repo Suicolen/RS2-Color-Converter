@@ -14,8 +14,7 @@ public final class ColorUtils {
         int b = awtColor.getBlue();
         int a = awtColor.getAlpha();
         double opacity = a / 255.0;
-        javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(r, g, b, opacity);
-        return fxColor;
+        return javafx.scene.paint.Color.rgb(r, g, b, opacity);
     }
 
     public static int convertToHSB(int red, int green, int blue) {
